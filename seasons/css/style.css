@@ -1,0 +1,116 @@
+@charset "utf-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Sawarabi+Mincho&display=swap');
+
+
+*{
+margin: 0;
+padding: 0;
+line-height: 1;
+}
+ul{list-style: none;}
+a{text-decoration: none;}
+img{vertical-align: bottom;
+}
+
+/* 共通部分 */
+header{
+padding: 30px 0;/* 内側余白 */
+}
+h1{
+text-align: center;
+font-family: 'Sawarabi Mincho', serif;
+font-size: 45px;
+}
+.g-nav{
+width: 100%;
+height: 50px;/* ボタンの高さ */
+background-color: #F6C555;
+margin-bottom: 50px;/* メインとnaviの間 */
+
+}
+.g-nav>ul{
+display: flex;/* 横並び */
+width: 960px;/* ulの幅指定 */
+margin: 0 auto;/* 端に寄ったのを真ん中にする */
+
+}
+.g-nav li{
+width: 20%;/* navを均等割 */
+}
+.g-nav a{
+display: block;/* navのボックスの大きさを作る */
+line-height:50px ;/* g-navの高さに合わせる 
+*/
+text-align: center;
+color: #fff;
+border-right:1px solid #ceaa50 ;
+}
+.g-nav a:hover{
+background-color: #e4b64c;
+}
+.g-nav li:first-of-type>a{/* 最初のliにのみ指示 */
+border-left: 1px solid #ceaa50;
+
+}
+main{
+width: 960px;
+margin: 0 auto 100px;/* 上0、左右auto、下１００ */
+}
+footer{
+width: 100%;
+height: 100px;
+background-color: #F6C555;
+}
+footer>p{
+color: #fff;
+text-align: center;
+line-height: 100px;
+}
+
+/* トップページ部分 */
+.main-visual{
+margin-bottom: 70px;
+}
+.main-txt>h2{
+margin-bottom: 15px;
+
+}
+.main-txt{
+text-align: center;
+}
+.main-txt>p{
+line-height: 2.5;
+width: 600px;
+margin: 0 auto;
+}
+
+/* 季節ページ */
+main.page{
+display: flex;
+}
+
+.page-img{
+margin-right: 30px;
+}
+.page-txt>h2{
+margin-bottom: 20px;
+font-family: 'Sawarabi Mincho', serif;
+}
+.page-txt>p{
+line-height: 1.8;
+}
+
+/* 個別部分 */
+#spring>.g-nav,#spring>footer{
+background-color: #F4A7B9;
+}
+#summer>.g-nav,#summer>footer{
+background-color: #78C2C4;
+}
+#fall>.g-nav,#fall>footer{
+background-color: #C78550;
+}
+#winter>.g-nav,#winter>footer{
+background-color: #828282;
+}
